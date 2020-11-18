@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="article-styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+	<title>Article</title>
+</head>
+<body>
+	<header class="hero">
+		<div class="wrap">
+			<a class="logo">
+				<img src="image/OBJECTS.png" alt="Логотип с надписью Anne sweet">
+			</a>
+			<nav class="nav-container">
+				<ul class="top-nav">
+					<li><a href="#all-articles" class="nav-link">Статьи</a></li>
+					<li><a href="#aboutMe" class="nav-link">Обо мне</a></li>
+					<li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+					<li><a href="#writeMe" class="nav-link">Написать мне</a></li>
+				</ul>
+			</nav>
+		</div>
+		<img src="image/samuel-scrimshaw-rJc1RioyERQ-unsplash 1.png" alt="Девушка с раскинутыми в сторону руками на фоне гор в облаках" class="main-poster">
+	</header>
+
+	<!----------section "Article"------------>
+	<main>
+		<div class="wrap">
+			<article class="article">
+				<h2>Как себя мотивировать</h2>
+				<span class="article__tags">Теги: путешествия, друзья</span><span class="article__date">29.09.2020</span>
+				<div class="text">
+					<p>Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам бороться с соблазнами» Ирины Якутенко.</p>
+					<p>Согласно этой теории, человеческое поведение контролируют две системы: BAS (Behavior Activation System) и BIS (Behavior Inhibition System), каждая из них обусловлена генетически. Грей использовал её для понимания того, как вознаграждение или наказание связаны с беспокойством и импульсивностью. Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно понять, какие стимулы использовать для эффективной мотивации.</p>
+				</div>
+				<figure>
+					<img src="image/Mask Group.png" alt="">
+					<figcaption>Моё поведение регулируется больше BAS, поэтому при планировании целей я всегда использую позитивный стимул.</figcaption>
+				</figure>
+				<div class="text">
+					<p>BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация людей, чье поведение в основном определяется этой системой, направлена на получение вознаграждения. Они стремятся получить одобрение и награду за свои действия. Такие люди более мотивированы в учебе и развитии разных навыков. Однако носители активной BAS склонны к импульсивности и желанию немедленного вознаграждения, что может мешать долгосрочной работе. BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.</p>
+					<p>Определив, к какому типу относится поведение, вы узнаете, какие стимулы использовать для достижения поставленной цели. Например, я решила выучить английский — само изучение не является целью, поэтому нужно правильно её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не потеряюсь в новой стране. И это можно использовать в различных сферах жизни.</p>
+				</div>
+				<div class="social-network">
+	<!------------------------Like button------------------------>
+					<button class="like" type="button"><img src="image/like.svg"><span class="likes-number"></span></button>
+	<!--------------------------/------------------------>
+					<div class="network">
+						<a href="http://twitter.com"><img src="image/twitter.png" alt=""></a>
+						<a href="http://facebook.com"><img src="image/facebook.png" alt=""></a>
+						<a href="http://vkontakte.ru"><img src="image/vk.png" alt=""></a>
+					</div>
+				</div>
+				<a href="index.html#all-articles" class="linkToAllArticles">
+					<span>Ко всем статьям</span>
+					<div class="arrow-line"></div>
+					<div class="arrow"></div>
+				</a>
+
+	<!--------------------------Comment form------------------------>
+				<div class="commentList">
+					<div class="comment">
+						<div class="icon"><img src="image/Rectangle 24.png" alt=""></div>
+						<span class="name">Иван Петров</span>
+						<div class="com">Отличная статья! Спасибо.</div>
+					</div>
+					<div class="comment">
+						<div class="icon"><img src="image/Rectangle 25.png" alt=""></div>
+						<span class="name">Ксения Ксения</span>
+						<div class="com">Отличный текст, добавила в закладки.</div>
+					</div>
+					<div class="comment">
+						<div class="icon"><img src="image/Rectangle 26.png" alt=""></div>
+						<span class="name">Иван Иванов</span>
+						<div class="com">Основательный материал! Можешь посоветовать какие-то книги на эту тему?</div>
+					</div>
+				</div>
+
+				<div class="formComments">
+					<span class="formComments__head">Оставить комментарий</span>
+					<form action="#" method="post" class="comment-form">
+						<div class="formComments__afterArticle__firstColumn">
+							<input type="text" name="yourName" class="yourName" placeholder="Имя" required>
+							<input type="email" name="yourEmail" class="yourEmail" placeholder="Почта" required>
+							<input type="submit" class="submit-button">
+						</div>
+						<div class="formComments__afterArticle__secondColumn">
+							<textarea name="comment" class="comment-field" placeholder="Написать комментарий..."></textarea>
+						</div>
+					</form>
+				</div>
+			</article>
+		</div>
+	</main>
+
+<!------------------------------Footer------------------------>
+	<footer class="footer">
+		<div class="wrap">
+			<div class="footer__network">
+				<a href="http://vkontakte.ru/" class="social-link" target="_blank">ВК</a>
+				<a href="http://telegram.ru/" class="social-link" target="_blank">Телеграм</a>
+				<a href="http://instagram.com/" class="social-link" target="_blank">Инстаграм</a>
+				<a href="http://twitter.com/" class="social-link" target="_blank">Твиттер</a>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/likesArticle.js"></script>
+	<script src="js/commentsArticle.js"></script>
+</body>
+</html>

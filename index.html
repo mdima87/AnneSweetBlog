@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="normalize.css" type="text/css">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+	<title>AnneSweetBlog</title>
+</head>
+<body>
+
+	<header class="hero">
+		<div class="wrap">
+			<a class="logo">
+				<img src="image/OBJECTS.png" alt="Логотип с надписью Anne sweet">
+			</a>
+			<nav class="nav-container">
+				<ul class="top-nav">
+					<li><a href="#all-articles" class="nav-link">Статьи</a></li>
+					<li><a href="#aboutMe" class="nav-link">Обо мне</a></li>
+					<li><a href="#portfolio" class="nav-link">Портфолио</a></li>
+					<li><a href="#writeMe" class="nav-link">Написать мне</a></li>
+				</ul>
+			</nav>
+		</div>
+		<img src="image/sonnie-hiles-gG70fyu3qsg-unsplash 1.png" alt="Улыбающаяся девушка, стоящая в полоборота на фона города и моря, которые находится внизу" class="main-poster">
+	</header>
+
+	<!----------section "All articles"------------>
+	<main>
+		<div class="wrap" id="all-articles">
+			<section class="section-header">
+				<h2>Все статьи</h2>
+	<!---menu "filter"--->
+				<div class="select">
+					<select class="filter">
+						<option value="city">Город</option>
+						<option value="books">Книги</option>
+						<option value="travels">Путешествия</option>
+						<option value="recipes">Рецепты</option>
+						<option value="photos">Фотографии</option>
+						<option value="all">Все новости</option>
+						<option value="choose" selected hidden>Выбрать тему</option>
+					</select>
+				</div>
+			</section>
+	<!-----/----->
+			<ul class="articles-list">
+				<li class="article-item" data-category="travels">
+					<a href="article.html" class="blog-post">
+						<img src="image/image 1.png" alt="Улица в Берлине" class="post-image">
+						<h3 class="post-heading">Путешествие в Берлин в августе</h3>
+						<p class="text ">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+						<footer class="post-footer">
+						<p class="post-tags">Теги: путешествия</p>
+						<time class="post-date" datetime="2020-09-29">29.09.2020</time>
+						</footer>
+					</a>
+				</li>
+				<li class="article-item" data-category="city">
+					<a href="article.html" class="blog-post">
+						<img src="image/image 2.png" alt="Сакан кофе со льдом" class="post-image">
+						<h3 class="post-heading">Где выпить колдбрю в Москве</h3>
+						<p class="text ">Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+						<footer class="post-footer">
+						<p class="post-tags">Теги: город</p>
+						<time class="post-date" datetime="2020-09-29">24.07.2020</time>
+						</footer>
+					</a>
+				</li>
+				<li class="article-item" data-category="books">
+					<a href="article.html" class="blog-post">
+						<img src="image/image 3.png" alt="Стопка книг, на которой лежат очки" class="post-image">
+						<h3 class="post-heading">Прочитано: книжные рекомендации</h3>
+						<p class="text ">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+						<footer class="post-footer">
+						<p class="post-tags">Теги: книги</p>
+						<time class="post-date" datetime="2020-09-29">15.07.2020</time>
+						</footer>
+					</a>
+				</li>
+				<li class="article-item" data-category="photos">
+					<a href="article.html" class="blog-post">
+						<img src="image/image 4.png" alt="Куст с розовыми розами" class="post-image">
+						<h3 class="post-heading">Снимки на плёнку</h3>
+						<p class="text ">Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+						<footer class="post-footer">
+						<p class="post-tags">Теги: фотографии</p>
+						<time class="post-date" datetime="2020-09-29">29.06.2020</time>
+						</footer>
+					</a>
+				</li>
+				<li class="article-item" data-category="recipes">
+					<a href="article.html" class="blog-post">
+						<img src="image/image 5.png" alt="Чизкейк на черной тарелке" class="post-image">
+						<h3 class="post-heading">Домашний чизкейк</h3>
+						<p class="text ">Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
+						<footer class="post-footer">
+						<p class="post-tags">Теги: рецепты</p>
+						<time class="post-date" datetime="2020-09-29">24.06.2020</time>
+						</footer>
+					</a>
+				</li>
+			</ul>
+			<button class="show-more">Показать еще</button>
+		</div>
+
+		<!----------section "About me"------------>
+		<section class="aboutMe" id="aboutMe">
+			<h2>Обо мне</h2>
+			<article class="aboutMe__cont">
+				<img src="image/image 6.png" alt="Девушка в красном платье сидит на пляже" class="author-image">
+				<div class="aboutMe__cont__text">
+					<div class="main-text">
+						<p>Всем привет! Меня зовут Аня, и это мой личный блог.<br> Здесь ты найдёшь рассказы о моих путешествиях, снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
+						<p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё портфолио. Ниже размещены несколько моих лучших рабочих текстов. Буду рада новым сотрудничествам!  </p>
+						<p>Если вы хотите написать мне — это можно сделать в соцсетях или через <a class="main-text__form" href="#writeMe">форму</a>. Всегда приятно услышать обратную связь от читателей и познакомиться поближе.</p>
+						<p>Приятного чтения!</p>
+					</div>
+					<blockquote class="blockquote">Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую себя.
+					</blockquote>
+				</div>
+			</article>
+		</section>
+
+		<!----------section "Portfolio"------------>
+		<section class="portfolio" id="portfolio">
+			<h2>Портфолио</h2>
+			<div class="portfolio__items">
+				<div class="item1">
+					<a href="#" class="portfolio-link">
+						<h3>Блог HTML Academy</h3>
+						<h4>«Как учиться продуктивно»</h4>
+						<p>Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.</p>
+					</a>
+				</div>
+				<div class="item2">
+					<a href="#" class="portfolio-link">
+						<h3>Журнал «LNK»</h3>
+						<h4>«Зачем поцели нужны человеку? И какие они бывают»</h4>
+						<p>Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются? Какие смысли вкладывают в этот ритуал? И где корни этой практики?</p>
+					</a>
+				</div>
+				<div class="item3">
+					<a href="#" class="portfolio-link">
+						<h3>Журнал «Т — Л»</h3>
+						<h4>«Советы по эффективной удалённой работе»</h4>
+						<p>Поделилась лайфхаками, которые помогают мне работать продуктивно из дома. </p>
+					</a>
+				</div>
+			</div>
+			<button class="portfolio__show-more">Показать еще</button>
+		</section>
+
+		<!----------section "Write me"------------>
+		<section class="writeMe" id="writeMe">
+			<h2>Написать мне</h2>
+			<form class="writeMe-form" action="#" method="post">
+				<label class="input-wrapper">
+					<span class="form-label">Ваше имя</span>
+					<input type="text" name="yourName" placeholder="Иван Иванов" required>
+				</label>
+				<label class="input-wrapper">
+					<span class="form-label">Email</span>
+					<input type="email" name="yourEmail" placeholder="google@gmail.com" required>
+				</label>
+				<div class="textareaBlock">
+					<label>
+						<span class="form-label-textarea">Сообщение</span><br>
+						<textarea name="yourMessage" class="comment-field" placeholder="Напишите здесь Ваше сообщение."></textarea>
+					</label>
+				</div>
+				<input type="submit" class="submit-button">
+			</form>
+		</section>
+	</main>
+
+
+	<!----------section "footer"------------>
+	<footer class="footer">
+		<div class="wrap">
+			<div class="footer__network">
+				<a href="http://vkontakte.ru/" class="social-link" target="_blank">ВК</a>
+				<a href="http://telegram.ru/" class="social-link" target="_blank">Телеграм</a>
+				<a href="http://instagram.com/" class="social-link" target="_blank">Инстаграм</a>
+				<a href="http://twitter.com/" class="social-link" target="_blank">Твиттер</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/commentsIndex.js"></script>
+	<script src="js/filter.js"></script>
+</body>
+</html>
